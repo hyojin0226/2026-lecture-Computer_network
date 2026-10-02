@@ -1,0 +1,1157 @@
+{
+  "vantages": {
+    "학교 Wi-Fi": {
+      "measured_at_utc": "2026-10-02T06:44:23Z",
+      "network": "학교 Wi-Fi",
+      "resolvers": {
+        "system": "163.152.213.9",
+        "google": "8.8.8.8",
+        "quad9": "9.9.9.9"
+      },
+      "sites": {
+        "www.microsoft.com": {
+          "chains": {
+            "system": {
+              "hops": [
+                {
+                  "from": "www.microsoft.com.",
+                  "to": "www.microsoft.com-c-3.edgekey.net."
+                },
+                {
+                  "from": "www.microsoft.com-c-3.edgekey.net.",
+                  "to": "e13678.dscb.akamaiedge.net."
+                }
+              ],
+              "final_name": "e13678.dscb.akamaiedge.net.",
+              "final_zone": "akamaiedge.net"
+            },
+            "google": {
+              "hops": [
+                {
+                  "from": "www.microsoft.com.",
+                  "to": "www.microsoft.com-c-3.edgekey.net."
+                },
+                {
+                  "from": "www.microsoft.com-c-3.edgekey.net.",
+                  "to": "e13678.dscb.akamaiedge.net."
+                }
+              ],
+              "final_name": "e13678.dscb.akamaiedge.net.",
+              "final_zone": "akamaiedge.net"
+            },
+            "quad9": {
+              "hops": [
+                {
+                  "from": "www.microsoft.com.",
+                  "to": "www.microsoft.com-c-3.edgekey.net."
+                },
+                {
+                  "from": "www.microsoft.com-c-3.edgekey.net.",
+                  "to": "e13678.dscb.akamaiedge.net."
+                }
+              ],
+              "final_name": "e13678.dscb.akamaiedge.net.",
+              "final_zone": "akamaiedge.net"
+            }
+          },
+          "addresses": {
+            "system": [
+              "23.49.206.40"
+            ],
+            "google": [
+              "23.49.206.40"
+            ],
+            "quad9": [
+              "23.63.226.92"
+            ]
+          },
+          "errors": {}
+        },
+        "www.netflix.com": {
+          "chains": {
+            "system": {
+              "hops": [
+                {
+                  "from": "www.netflix.com.",
+                  "to": "www.prod.ftl.netflix.com."
+                }
+              ],
+              "final_name": "www.prod.ftl.netflix.com.",
+              "final_zone": "netflix.com"
+            },
+            "google": {
+              "hops": [
+                {
+                  "from": "www.netflix.com.",
+                  "to": "www.prod.ftl.netflix.com."
+                }
+              ],
+              "final_name": "www.prod.ftl.netflix.com.",
+              "final_zone": "netflix.com"
+            },
+            "quad9": {
+              "hops": [
+                {
+                  "from": "www.netflix.com.",
+                  "to": "www.prod.ftl.netflix.com."
+                }
+              ],
+              "final_name": "www.prod.ftl.netflix.com.",
+              "final_zone": "netflix.com"
+            }
+          },
+          "addresses": {
+            "system": [
+              "207.45.72.1",
+              "207.45.73.1"
+            ],
+            "google": [
+              "207.45.72.1",
+              "207.45.73.1"
+            ],
+            "quad9": [
+              "207.45.72.1",
+              "207.45.73.1"
+            ]
+          },
+          "errors": {}
+        },
+        "www.adobe.com": {
+          "chains": {
+            "system": {
+              "hops": [
+                {
+                  "from": "www.adobe.com.",
+                  "to": "www.adobe.com.edgesuite.net."
+                },
+                {
+                  "from": "www.adobe.com.edgesuite.net.",
+                  "to": "a1319.dscr.akamai.net."
+                }
+              ],
+              "final_name": "a1319.dscr.akamai.net.",
+              "final_zone": "akamai.net"
+            },
+            "google": {
+              "hops": [
+                {
+                  "from": "www.adobe.com.",
+                  "to": "www.adobe.com.edgesuite.net."
+                },
+                {
+                  "from": "www.adobe.com.edgesuite.net.",
+                  "to": "a1319.dscr.akamai.net."
+                }
+              ],
+              "final_name": "a1319.dscr.akamai.net.",
+              "final_zone": "akamai.net"
+            },
+            "quad9": {
+              "hops": [
+                {
+                  "from": "www.adobe.com.",
+                  "to": "www.adobe.com.edgesuite.net."
+                },
+                {
+                  "from": "www.adobe.com.edgesuite.net.",
+                  "to": "a1319.dscr.akamai.net."
+                }
+              ],
+              "final_name": "a1319.dscr.akamai.net.",
+              "final_zone": "akamai.net"
+            }
+          },
+          "addresses": {
+            "system": [
+              "23.76.153.115",
+              "23.76.153.121"
+            ],
+            "google": [
+              "23.76.153.115",
+              "23.76.153.121"
+            ],
+            "quad9": [
+              "2.22.234.137",
+              "2.22.234.155"
+            ]
+          },
+          "errors": {}
+        },
+        "www.cnn.com": {
+          "chains": {
+            "system": {
+              "hops": [
+                {
+                  "from": "www.cnn.com.",
+                  "to": "cnn-tls.map.fastly.net."
+                }
+              ],
+              "final_name": "cnn-tls.map.fastly.net.",
+              "final_zone": "fastly.net"
+            },
+            "google": {
+              "hops": [
+                {
+                  "from": "www.cnn.com.",
+                  "to": "cnn-tls.map.fastly.net."
+                }
+              ],
+              "final_name": "cnn-tls.map.fastly.net.",
+              "final_zone": "fastly.net"
+            },
+            "quad9": {
+              "hops": [
+                {
+                  "from": "www.cnn.com.",
+                  "to": "cnn-tls.map.fastly.net."
+                }
+              ],
+              "final_name": "cnn-tls.map.fastly.net.",
+              "final_zone": "fastly.net"
+            }
+          },
+          "addresses": {
+            "system": [
+              "146.75.51.5"
+            ],
+            "google": [
+              "151.101.131.5",
+              "151.101.195.5",
+              "151.101.3.5",
+              "151.101.67.5"
+            ],
+            "quad9": [
+              "151.101.131.5",
+              "151.101.195.5",
+              "151.101.3.5",
+              "151.101.67.5"
+            ]
+          },
+          "errors": {}
+        },
+        "www.apple.com": {
+          "chains": {
+            "system": {
+              "hops": [
+                {
+                  "from": "www.apple.com.",
+                  "to": "www-apple-com.v.aaplimg.com."
+                },
+                {
+                  "from": "www-apple-com.v.aaplimg.com.",
+                  "to": "www.apple.com.edgekey.net."
+                },
+                {
+                  "from": "www.apple.com.edgekey.net.",
+                  "to": "e6858.dsce9.akamaiedge.net."
+                }
+              ],
+              "final_name": "e6858.dsce9.akamaiedge.net.",
+              "final_zone": "akamaiedge.net"
+            },
+            "google": {
+              "hops": [
+                {
+                  "from": "www.apple.com.",
+                  "to": "www-apple-com.v.aaplimg.com."
+                },
+                {
+                  "from": "www-apple-com.v.aaplimg.com.",
+                  "to": "www.apple.com.edgekey.net."
+                },
+                {
+                  "from": "www.apple.com.edgekey.net.",
+                  "to": "e6858.dsce9.akamaiedge.net."
+                }
+              ],
+              "final_name": "e6858.dsce9.akamaiedge.net.",
+              "final_zone": "akamaiedge.net"
+            },
+            "quad9": {
+              "hops": [
+                {
+                  "from": "www.apple.com.",
+                  "to": "www-apple-com.v.aaplimg.com."
+                },
+                {
+                  "from": "www-apple-com.v.aaplimg.com.",
+                  "to": "www.apple.com.edgekey.net."
+                },
+                {
+                  "from": "www.apple.com.edgekey.net.",
+                  "to": "e6858.dsce9.akamaiedge.net."
+                }
+              ],
+              "final_name": "e6858.dsce9.akamaiedge.net.",
+              "final_zone": "akamaiedge.net"
+            }
+          },
+          "addresses": {
+            "system": [
+              "23.49.205.28"
+            ],
+            "google": [
+              "184.31.228.249"
+            ],
+            "quad9": [
+              "184.31.228.249"
+            ]
+          },
+          "errors": {}
+        },
+        "www.korea.ac.kr": {
+          "chains": {
+            "system": {
+              "hops": [],
+              "final_name": "www.korea.ac.kr.",
+              "final_zone": "korea.ac.kr"
+            },
+            "google": {
+              "hops": [],
+              "final_name": "www.korea.ac.kr.",
+              "final_zone": "korea.ac.kr"
+            },
+            "quad9": {
+              "hops": [],
+              "final_name": "www.korea.ac.kr.",
+              "final_zone": "korea.ac.kr"
+            }
+          },
+          "addresses": {
+            "system": [
+              "163.152.6.10"
+            ],
+            "google": [
+              "163.152.6.10"
+            ],
+            "quad9": [
+              "163.152.6.10"
+            ]
+          },
+          "errors": {}
+        },
+        "www.stanford.edu": {
+          "chains": {
+            "system": {
+              "hops": [
+                {
+                  "from": "www.stanford.edu.",
+                  "to": "stanford.netlifyglobalcdn.com."
+                }
+              ],
+              "final_name": "stanford.netlifyglobalcdn.com.",
+              "final_zone": "netlifyglobalcdn.com"
+            },
+            "google": {
+              "hops": [
+                {
+                  "from": "www.stanford.edu.",
+                  "to": "stanford.netlifyglobalcdn.com."
+                }
+              ],
+              "final_name": "stanford.netlifyglobalcdn.com.",
+              "final_zone": "netlifyglobalcdn.com"
+            },
+            "quad9": {
+              "hops": [
+                {
+                  "from": "www.stanford.edu.",
+                  "to": "stanford.netlifyglobalcdn.com."
+                }
+              ],
+              "final_name": "stanford.netlifyglobalcdn.com.",
+              "final_zone": "netlifyglobalcdn.com"
+            }
+          },
+          "addresses": {
+            "system": [
+              "15.197.167.90",
+              "3.33.186.135"
+            ],
+            "google": [
+              "15.197.167.90",
+              "3.33.186.135"
+            ],
+            "quad9": [
+              "15.197.167.90",
+              "3.33.186.135"
+            ]
+          },
+          "errors": {}
+        },
+        "www.bbc.co.uk": {
+          "chains": {
+            "system": {
+              "hops": [
+                {
+                  "from": "www.bbc.co.uk.",
+                  "to": "www.bbc.co.uk.pri.bbc.co.uk."
+                },
+                {
+                  "from": "www.bbc.co.uk.pri.bbc.co.uk.",
+                  "to": "bbc.map.fastly.net."
+                }
+              ],
+              "final_name": "bbc.map.fastly.net.",
+              "final_zone": "fastly.net"
+            },
+            "google": {
+              "hops": [
+                {
+                  "from": "www.bbc.co.uk.",
+                  "to": "www.bbc.co.uk.pri.bbc.co.uk."
+                },
+                {
+                  "from": "www.bbc.co.uk.pri.bbc.co.uk.",
+                  "to": "bbc.map.fastly.net."
+                }
+              ],
+              "final_name": "bbc.map.fastly.net.",
+              "final_zone": "fastly.net"
+            },
+            "quad9": {
+              "hops": [
+                {
+                  "from": "www.bbc.co.uk.",
+                  "to": "www.bbc.co.uk.pri.bbc.co.uk."
+                },
+                {
+                  "from": "www.bbc.co.uk.pri.bbc.co.uk.",
+                  "to": "bbc.map.fastly.net."
+                }
+              ],
+              "final_name": "bbc.map.fastly.net.",
+              "final_zone": "fastly.net"
+            }
+          },
+          "addresses": {
+            "system": [
+              "146.75.48.81"
+            ],
+            "google": [
+              "151.101.0.81",
+              "151.101.128.81",
+              "151.101.192.81",
+              "151.101.64.81"
+            ],
+            "quad9": [
+              "151.101.0.81",
+              "151.101.128.81",
+              "151.101.192.81",
+              "151.101.64.81"
+            ]
+          },
+          "errors": {}
+        },
+        "www.spotify.com": {
+          "chains": {
+            "system": {
+              "hops": [
+                {
+                  "from": "www.spotify.com.",
+                  "to": "atc.spotify.map.fastly.net."
+                }
+              ],
+              "final_name": "atc.spotify.map.fastly.net.",
+              "final_zone": "fastly.net"
+            },
+            "google": {
+              "hops": [
+                {
+                  "from": "www.spotify.com.",
+                  "to": "atc.spotify.map.fastly.net."
+                }
+              ],
+              "final_name": "atc.spotify.map.fastly.net.",
+              "final_zone": "fastly.net"
+            },
+            "quad9": {
+              "hops": [
+                {
+                  "from": "www.spotify.com.",
+                  "to": "atc.spotify.map.fastly.net."
+                }
+              ],
+              "final_name": "atc.spotify.map.fastly.net.",
+              "final_zone": "fastly.net"
+            }
+          },
+          "addresses": {
+            "system": [
+              "146.75.51.42"
+            ],
+            "google": [
+              "151.101.131.42",
+              "151.101.195.42",
+              "151.101.3.42",
+              "151.101.67.42"
+            ],
+            "quad9": [
+              "151.101.131.42",
+              "151.101.195.42",
+              "151.101.3.42",
+              "151.101.67.42"
+            ]
+          },
+          "errors": {}
+        },
+        "www.github.com": {
+          "chains": {
+            "system": {
+              "hops": [
+                {
+                  "from": "www.github.com.",
+                  "to": "github.com."
+                }
+              ],
+              "final_name": "github.com.",
+              "final_zone": "github.com"
+            },
+            "google": {
+              "hops": [
+                {
+                  "from": "www.github.com.",
+                  "to": "github.com."
+                }
+              ],
+              "final_name": "github.com.",
+              "final_zone": "github.com"
+            },
+            "quad9": {
+              "hops": [
+                {
+                  "from": "www.github.com.",
+                  "to": "github.com."
+                }
+              ],
+              "final_name": "github.com.",
+              "final_zone": "github.com"
+            }
+          },
+          "addresses": {
+            "system": [
+              "20.200.245.247"
+            ],
+            "google": [
+              "20.200.245.247"
+            ],
+            "quad9": [
+              "20.27.177.113"
+            ]
+          },
+          "errors": {}
+        },
+        "www.wikipedia.org": {
+          "chains": {
+            "system": {
+              "hops": [
+                {
+                  "from": "www.wikipedia.org.",
+                  "to": "dyna.wikimedia.org."
+                }
+              ],
+              "final_name": "dyna.wikimedia.org.",
+              "final_zone": "wikimedia.org"
+            },
+            "google": {
+              "hops": [
+                {
+                  "from": "www.wikipedia.org.",
+                  "to": "dyna.wikimedia.org."
+                }
+              ],
+              "final_name": "dyna.wikimedia.org.",
+              "final_zone": "wikimedia.org"
+            },
+            "quad9": {
+              "hops": [
+                {
+                  "from": "www.wikipedia.org.",
+                  "to": "dyna.wikimedia.org."
+                }
+              ],
+              "final_name": "dyna.wikimedia.org.",
+              "final_zone": "wikimedia.org"
+            }
+          },
+          "addresses": {
+            "system": [
+              "103.102.166.224"
+            ],
+            "google": [
+              "103.102.166.224"
+            ],
+            "quad9": [
+              "103.102.166.224"
+            ]
+          },
+          "errors": {}
+        },
+        "www.nytimes.com": {
+          "chains": {
+            "system": {
+              "hops": [
+                {
+                  "from": "www.nytimes.com.",
+                  "to": "www.prd.map.nytimes.com."
+                },
+                {
+                  "from": "www.prd.map.nytimes.com.",
+                  "to": "www.prd.map.nytimes.xovr.nyt.net."
+                },
+                {
+                  "from": "www.prd.map.nytimes.xovr.nyt.net.",
+                  "to": "nytimes.map.fastly.net."
+                }
+              ],
+              "final_name": "nytimes.map.fastly.net.",
+              "final_zone": "fastly.net"
+            },
+            "google": {
+              "hops": [
+                {
+                  "from": "www.nytimes.com.",
+                  "to": "www.prd.map.nytimes.com."
+                },
+                {
+                  "from": "www.prd.map.nytimes.com.",
+                  "to": "www.prd.map.nytimes.xovr.nyt.net."
+                },
+                {
+                  "from": "www.prd.map.nytimes.xovr.nyt.net.",
+                  "to": "nytimes.map.fastly.net."
+                }
+              ],
+              "final_name": "nytimes.map.fastly.net.",
+              "final_zone": "fastly.net"
+            },
+            "quad9": {
+              "hops": [
+                {
+                  "from": "www.nytimes.com.",
+                  "to": "www.prd.map.nytimes.com."
+                },
+                {
+                  "from": "www.prd.map.nytimes.com.",
+                  "to": "www.prd.map.nytimes.xovr.nyt.net."
+                },
+                {
+                  "from": "www.prd.map.nytimes.xovr.nyt.net.",
+                  "to": "nytimes.map.fastly.net."
+                }
+              ],
+              "final_name": "nytimes.map.fastly.net.",
+              "final_zone": "fastly.net"
+            }
+          },
+          "addresses": {
+            "system": [
+              "146.75.49.164"
+            ],
+            "google": [
+              "151.101.1.164",
+              "151.101.129.164",
+              "151.101.193.164",
+              "151.101.65.164"
+            ],
+            "quad9": [
+              "151.101.1.164",
+              "151.101.129.164",
+              "151.101.193.164",
+              "151.101.65.164"
+            ]
+          },
+          "errors": {}
+        }
+      }
+    },
+    "휴대폰 테더링": {
+      "measured_at_utc": "2026-10-02T08:16:00Z",
+      "network": "휴대폰 테더링",
+      "resolvers": {
+        "system": null,
+        "google": "8.8.8.8",
+        "quad9": "9.9.9.9"
+      },
+      "sites": {
+        "www.microsoft.com": {
+          "chains": {
+            "google": {
+              "hops": [
+                {
+                  "from": "www.microsoft.com.",
+                  "to": "www.microsoft.com-c-3.edgekey.net."
+                },
+                {
+                  "from": "www.microsoft.com-c-3.edgekey.net.",
+                  "to": "e13678.dscb.akamaiedge.net."
+                }
+              ],
+              "final_name": "e13678.dscb.akamaiedge.net.",
+              "final_zone": "akamaiedge.net"
+            },
+            "quad9": {
+              "hops": [
+                {
+                  "from": "www.microsoft.com.",
+                  "to": "www.microsoft.com-c-3.edgekey.net."
+                },
+                {
+                  "from": "www.microsoft.com-c-3.edgekey.net.",
+                  "to": "e13678.dscb.akamaiedge.net."
+                }
+              ],
+              "final_name": "e13678.dscb.akamaiedge.net.",
+              "final_zone": "akamaiedge.net"
+            }
+          },
+          "addresses": {
+            "google": [
+              "104.94.218.45"
+            ],
+            "quad9": [
+              "23.0.194.92"
+            ]
+          },
+          "errors": {
+            "system": "system resolver address could not be discovered"
+          }
+        },
+        "www.netflix.com": {
+          "chains": {
+            "google": {
+              "hops": [
+                {
+                  "from": "www.netflix.com.",
+                  "to": "www.prod.ftl.netflix.com."
+                }
+              ],
+              "final_name": "www.prod.ftl.netflix.com.",
+              "final_zone": "netflix.com"
+            },
+            "quad9": {
+              "hops": [
+                {
+                  "from": "www.netflix.com.",
+                  "to": "www.prod.ftl.netflix.com."
+                }
+              ],
+              "final_name": "www.prod.ftl.netflix.com.",
+              "final_zone": "netflix.com"
+            }
+          },
+          "addresses": {
+            "google": [
+              "207.45.72.1",
+              "207.45.73.1"
+            ],
+            "quad9": [
+              "207.45.72.1",
+              "207.45.73.1"
+            ]
+          },
+          "errors": {
+            "system": "system resolver address could not be discovered"
+          }
+        },
+        "www.adobe.com": {
+          "chains": {
+            "google": {
+              "hops": [],
+              "final_name": "www.adobe.com.",
+              "final_zone": "adobe.com"
+            },
+            "quad9": {
+              "hops": [
+                {
+                  "from": "www.adobe.com.",
+                  "to": "www.adobe.com.edgesuite.net."
+                },
+                {
+                  "from": "www.adobe.com.edgesuite.net.",
+                  "to": "a1319.dscr.akamai.net."
+                }
+              ],
+              "final_name": "a1319.dscr.akamai.net.",
+              "final_zone": "akamai.net"
+            }
+          },
+          "addresses": {
+            "google": [
+              "23.32.56.10",
+              "23.32.56.11",
+              "23.32.56.34",
+              "23.32.56.43",
+              "23.32.56.57"
+            ],
+            "quad9": [
+              "2.22.234.137",
+              "2.22.234.155"
+            ]
+          },
+          "errors": {
+            "system": "system resolver address could not be discovered",
+            "google": "TimeoutError: timed out"
+          }
+        },
+        "www.cnn.com": {
+          "chains": {
+            "google": {
+              "hops": [
+                {
+                  "from": "www.cnn.com.",
+                  "to": "cnn-tls.map.fastly.net."
+                }
+              ],
+              "final_name": "cnn-tls.map.fastly.net.",
+              "final_zone": "fastly.net"
+            },
+            "quad9": {
+              "hops": [],
+              "final_name": "www.cnn.com.",
+              "final_zone": "cnn.com"
+            }
+          },
+          "addresses": {
+            "google": [],
+            "quad9": []
+          },
+          "errors": {
+            "system": "system resolver address could not be discovered",
+            "quad9": "TimeoutError: timed out"
+          }
+        },
+        "www.apple.com": {
+          "chains": {
+            "google": {
+              "hops": [
+                {
+                  "from": "www.apple.com.",
+                  "to": "www-apple-com.v.aaplimg.com."
+                },
+                {
+                  "from": "www-apple-com.v.aaplimg.com.",
+                  "to": "www.apple.com.edgekey.net."
+                },
+                {
+                  "from": "www.apple.com.edgekey.net.",
+                  "to": "e6858.dsce9.akamaiedge.net."
+                }
+              ],
+              "final_name": "e6858.dsce9.akamaiedge.net.",
+              "final_zone": "akamaiedge.net"
+            },
+            "quad9": {
+              "hops": [
+                {
+                  "from": "www.apple.com.",
+                  "to": "www-apple-com.v.aaplimg.com."
+                },
+                {
+                  "from": "www-apple-com.v.aaplimg.com.",
+                  "to": "www.apple.com.edgekey.net."
+                },
+                {
+                  "from": "www.apple.com.edgekey.net.",
+                  "to": "e6858.dsce9.akamaiedge.net."
+                }
+              ],
+              "final_name": "e6858.dsce9.akamaiedge.net.",
+              "final_zone": "akamaiedge.net"
+            }
+          },
+          "addresses": {
+            "google": [
+              "184.31.228.249"
+            ],
+            "quad9": [
+              "23.0.193.49"
+            ]
+          },
+          "errors": {
+            "system": "system resolver address could not be discovered"
+          }
+        },
+        "www.korea.ac.kr": {
+          "chains": {
+            "google": {
+              "hops": [],
+              "final_name": "www.korea.ac.kr.",
+              "final_zone": "korea.ac.kr"
+            },
+            "quad9": {
+              "hops": [],
+              "final_name": "www.korea.ac.kr.",
+              "final_zone": "korea.ac.kr"
+            }
+          },
+          "addresses": {
+            "google": [
+              "163.152.6.10"
+            ],
+            "quad9": [
+              "163.152.6.10"
+            ]
+          },
+          "errors": {
+            "system": "system resolver address could not be discovered"
+          }
+        },
+        "www.stanford.edu": {
+          "chains": {
+            "google": {
+              "hops": [
+                {
+                  "from": "www.stanford.edu.",
+                  "to": "stanford.netlifyglobalcdn.com."
+                }
+              ],
+              "final_name": "stanford.netlifyglobalcdn.com.",
+              "final_zone": "netlifyglobalcdn.com"
+            },
+            "quad9": {
+              "hops": [
+                {
+                  "from": "www.stanford.edu.",
+                  "to": "stanford.netlifyglobalcdn.com."
+                }
+              ],
+              "final_name": "stanford.netlifyglobalcdn.com.",
+              "final_zone": "netlifyglobalcdn.com"
+            }
+          },
+          "addresses": {
+            "google": [
+              "15.197.167.90",
+              "3.33.186.135"
+            ],
+            "quad9": [
+              "15.197.167.90",
+              "3.33.186.135"
+            ]
+          },
+          "errors": {
+            "system": "system resolver address could not be discovered"
+          }
+        },
+        "www.bbc.co.uk": {
+          "chains": {
+            "google": {
+              "hops": [
+                {
+                  "from": "www.bbc.co.uk.",
+                  "to": "www.bbc.co.uk.pri.bbc.co.uk."
+                },
+                {
+                  "from": "www.bbc.co.uk.pri.bbc.co.uk.",
+                  "to": "bbc.map.fastly.net."
+                }
+              ],
+              "final_name": "bbc.map.fastly.net.",
+              "final_zone": "fastly.net"
+            },
+            "quad9": {
+              "hops": [
+                {
+                  "from": "www.bbc.co.uk.",
+                  "to": "www.bbc.co.uk.pri.bbc.co.uk."
+                },
+                {
+                  "from": "www.bbc.co.uk.pri.bbc.co.uk.",
+                  "to": "bbc.map.fastly.net."
+                }
+              ],
+              "final_name": "bbc.map.fastly.net.",
+              "final_zone": "fastly.net"
+            }
+          },
+          "addresses": {
+            "google": [
+              "151.101.0.81",
+              "151.101.128.81",
+              "151.101.192.81",
+              "151.101.64.81"
+            ],
+            "quad9": [
+              "151.101.0.81",
+              "151.101.128.81",
+              "151.101.192.81",
+              "151.101.64.81"
+            ]
+          },
+          "errors": {
+            "system": "system resolver address could not be discovered"
+          }
+        },
+        "www.spotify.com": {
+          "chains": {
+            "google": {
+              "hops": [
+                {
+                  "from": "www.spotify.com.",
+                  "to": "atc.spotify.map.fastly.net."
+                }
+              ],
+              "final_name": "atc.spotify.map.fastly.net.",
+              "final_zone": "fastly.net"
+            },
+            "quad9": {
+              "hops": [
+                {
+                  "from": "www.spotify.com.",
+                  "to": "atc.spotify.map.fastly.net."
+                }
+              ],
+              "final_name": "atc.spotify.map.fastly.net.",
+              "final_zone": "fastly.net"
+            }
+          },
+          "addresses": {
+            "google": [
+              "151.101.131.42",
+              "151.101.195.42",
+              "151.101.3.42",
+              "151.101.67.42"
+            ],
+            "quad9": [
+              "151.101.131.42",
+              "151.101.195.42",
+              "151.101.3.42",
+              "151.101.67.42"
+            ]
+          },
+          "errors": {
+            "system": "system resolver address could not be discovered"
+          }
+        },
+        "www.github.com": {
+          "chains": {
+            "google": {
+              "hops": [
+                {
+                  "from": "www.github.com.",
+                  "to": "github.com."
+                }
+              ],
+              "final_name": "github.com.",
+              "final_zone": "github.com"
+            },
+            "quad9": {
+              "hops": [
+                {
+                  "from": "www.github.com.",
+                  "to": "github.com."
+                }
+              ],
+              "final_name": "github.com.",
+              "final_zone": "github.com"
+            }
+          },
+          "addresses": {
+            "google": [
+              "20.200.245.247"
+            ],
+            "quad9": [
+              "20.27.177.113"
+            ]
+          },
+          "errors": {
+            "system": "system resolver address could not be discovered"
+          }
+        },
+        "www.wikipedia.org": {
+          "chains": {
+            "google": {
+              "hops": [
+                {
+                  "from": "www.wikipedia.org.",
+                  "to": "dyna.wikimedia.org."
+                }
+              ],
+              "final_name": "dyna.wikimedia.org.",
+              "final_zone": "wikimedia.org"
+            },
+            "quad9": {
+              "hops": [
+                {
+                  "from": "www.wikipedia.org.",
+                  "to": "dyna.wikimedia.org."
+                }
+              ],
+              "final_name": "dyna.wikimedia.org.",
+              "final_zone": "wikimedia.org"
+            }
+          },
+          "addresses": {
+            "google": [
+              "103.102.166.224"
+            ],
+            "quad9": [
+              "103.102.166.224"
+            ]
+          },
+          "errors": {
+            "system": "system resolver address could not be discovered"
+          }
+        },
+        "www.nytimes.com": {
+          "chains": {
+            "google": {
+              "hops": [
+                {
+                  "from": "www.nytimes.com.",
+                  "to": "www.prd.map.nytimes.com."
+                },
+                {
+                  "from": "www.prd.map.nytimes.com.",
+                  "to": "www.prd.map.nytimes.xovr.nyt.net."
+                },
+                {
+                  "from": "www.prd.map.nytimes.xovr.nyt.net.",
+                  "to": "nytimes.map.fastly.net."
+                }
+              ],
+              "final_name": "nytimes.map.fastly.net.",
+              "final_zone": "fastly.net"
+            },
+            "quad9": {
+              "hops": [
+                {
+                  "from": "www.nytimes.com.",
+                  "to": "www.prd.map.nytimes.com."
+                },
+                {
+                  "from": "www.prd.map.nytimes.com.",
+                  "to": "www.prd.map.nytimes.xovr.nyt.net."
+                },
+                {
+                  "from": "www.prd.map.nytimes.xovr.nyt.net.",
+                  "to": "nytimes.map.fastly.net."
+                }
+              ],
+              "final_name": "nytimes.map.fastly.net.",
+              "final_zone": "fastly.net"
+            }
+          },
+          "addresses": {
+            "google": [
+              "151.101.1.164",
+              "151.101.129.164",
+              "151.101.193.164",
+              "151.101.65.164"
+            ],
+            "quad9": [
+              "151.101.1.164",
+              "151.101.129.164",
+              "151.101.193.164",
+              "151.101.65.164"
+            ]
+          },
+          "errors": {
+            "system": "system resolver address could not be discovered"
+          }
+        }
+      }
+    }
+  }
+}

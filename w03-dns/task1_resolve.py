@@ -114,10 +114,21 @@ class Resolver:
         ident = random.randrange(0, 65536)
         question = self._encode_name(name) + struct.pack("!HH", 1, 1)  # IN A
         packet = struct.pack("!HHHHHH", ident, 0x0100 if recursive else 0, 1, 0, 0, 0) + question
+        query_timeout = self.TIMEOUT if timeout is None else timeout
         with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as sock:
-            sock.settimeout(self.TIMEOUT if timeout is None else timeout)
+            sock.settimeout(query_timeout)
             sock.sendto(packet, (server, 53))
             reply, _ = sock.recvfrom(65535)
+        # Large DNSSEC referrals can be truncated over UDP. The TC bit asks
+        # the client to repeat the same query over TCP before giving up.
+        if len(reply) >= 4 and struct.unpack("!H", reply[2:4])[0] & 0x0200:
+            with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
+                sock.settimeout(query_timeout)
+                sock.connect((server, 53))
+                sock.sendall(struct.pack("!H", len(packet)) + packet)
+                size_data = self._recv_exact(sock, 2)
+                response_size = struct.unpack("!H", size_data)[0]
+                reply = self._recv_exact(sock, response_size)
         if len(reply) < 12:
             raise ValueError("short DNS response")
         rid, flags, qd, an, ns, ar = struct.unpack("!HHHHHH", reply[:12])
@@ -152,6 +163,17 @@ class Resolver:
         if rcode not in (0, 3):
             raise OSError(f"DNS server returned rcode {rcode}")
         return flags, sections
+
+    @staticmethod
+    def _recv_exact(sock, size):
+        """Read exactly size bytes from a length-prefixed DNS/TCP stream."""
+        data = bytearray()
+        while len(data) < size:
+            chunk = sock.recv(size - len(data))
+            if not chunk:
+                raise OSError("DNS/TCP connection closed before full response")
+            data.extend(chunk)
+        return bytes(data)
 
     def _walk(self, name, path, depth, resolving_ns):
         if depth > self.MAX_HOPS:

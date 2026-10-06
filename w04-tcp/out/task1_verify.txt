@@ -1,0 +1,12 @@
+
+=== Task 1
+  bytes    sent 2000   received 2000
+  channel  {'sent': 310, 'lost': 32, 'duplicated': 10, 'delivered': 288}
+  result   IDENTICAL
+  ok   [1] transfer seed=246 arrives identical
+  bytes    sent 2000   received 2000
+  channel  {'sent': 311, 'lost': 38, 'duplicated': 9, 'delivered': 282}
+  result   IDENTICAL
+  ok   [1] transfer seed=999 arrives identical
+
+  2 passed, 0 failed, 0 skipped

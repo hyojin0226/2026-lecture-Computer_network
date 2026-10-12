@@ -15,9 +15,8 @@
 
 ## C · DHCP DORA (공식 trace, 경로 B)
 
-- 직접 캡처 대신 교재 공식 9판 DHCP trace를 사용했다. Discover/Offer/Request/Ack 네 메시지가 모두 있다.
+- 직접 캡처 대신 교재 공식 9판 DHCP trace를 사용했다. 선택한 대화의 프레임은 Discover 5, Offer 12, Request 16, Ack 17이다. 같은 xid의 Discover(프레임 9)와 Offer(프레임 13)도 한 번씩 더 관찰된다.
 - Discover의 IP 출발지는 `0.0.0.0`, 목적지는 `255.255.255.255`다. 클라이언트는 아직 임대 주소가 없고 DHCP 서버 주소도 모르므로, 출발지 주소를 쓸 수 없으며 브로드캐스트로 서버를 찾아야 한다.
-- trace의 Offer/Ack는 서버 `192.168.86.1`에서 제안 주소 `192.168.86.65`로 전달됐다. Ack는 클라이언트가 사용할 주소를 알게 된 뒤라 브로드캐스트가 필요하지 않다.
-- 임대 시간은 `86,400초`(24시간), 갱신 시점 T1은 임대 시간의 절반인 `43,200초`(12시간)다.
+- 선택한 Offer(프레임 12)는 서버 `192.168.86.1`에서 제안 주소 `192.168.86.65`로 전달됐고 임대 시간은 `86,400초`(24시간)다. Ack(프레임 17)도 제안 주소로 unicast된다. 임대 절반인 T1(`43,200초`, 12시간)에 클라이언트가 서버로 DHCPREQUEST를 보내 갱신을 시도한다.
 
 Trace 출처: Wireshark lab trace files from J.F. Kurose and K.W. Ross, *Computer Networking: A Top-Down Approach*, 9th ed. https://gaia.cs.umass.edu/kurose_ross/ . Copyright 1996-2025 J.F. Kurose, K.W. Ross. All Rights Reserved.

@@ -18,6 +18,9 @@ linear table. A fast router that forwards to the wrong next hop is not a
 router, it is an outage.
 """
 
+MASKS = tuple((0xFFFFFFFF << (32 - prefix_len)) & 0xFFFFFFFF
+              for prefix_len in range(33))
+
 
 class LinearTable:
     """Correct, and slow in the obvious way."""
@@ -56,15 +59,22 @@ class YourTable:
 
     def __init__(self):
         self.by_prefix = [{} for _ in range(33)]
+        # Store only prefix lengths that actually occur, in longest-first order.
+        # Negative values let us keep the list sorted with bisect.insort.
+        self.prefix_lengths = []
 
     def add(self, network, prefix_len, next_hop):
-        self.by_prefix[prefix_len].setdefault(network, next_hop)
+        routes = self.by_prefix[prefix_len]
+        if not routes:
+            import bisect
+            bisect.insort(self.prefix_lengths, -prefix_len)
+        routes.setdefault(network, next_hop)
 
     def lookup(self, address):
         routes = self.by_prefix
-        for prefix_len in range(32, -1, -1):
-            mask = (0xFFFFFFFF << (32 - prefix_len)) & 0xFFFFFFFF
-            next_hop = routes[prefix_len].get(address & mask)
+        for negative_prefix_len in self.prefix_lengths:
+            prefix_len = -negative_prefix_len
+            next_hop = routes[prefix_len].get(address & MASKS[prefix_len])
             if next_hop is not None:
                 return next_hop
         return None

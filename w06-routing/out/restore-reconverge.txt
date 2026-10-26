@@ -1,0 +1,1 @@
+r1-r2 link restore: 11 seconds (1-second polling resolution)

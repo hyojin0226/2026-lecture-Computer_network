@@ -1,0 +1,9 @@
+  ok    unknown destination floods                     [1, 2, 3]
+  ok    known destination is not flooded               [0]
+  ok    learned both                                   {'00:00:00:00:00:0a': 0, '00:00:00:00:00:0b': 2}
+  ok    broadcast floods                               [1, 2, 3]
+  ok    never back out the arrival port                []
+  ok    station moved, table follows                   ([0], 3)
+  ok    aged-out entry is gone                         False
+
+  all ok
